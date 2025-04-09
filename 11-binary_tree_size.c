@@ -11,7 +11,7 @@ size_t binary_tree_size(const binary_tree_t *tree)
 	if (tree == NULL)
 		return (0);
 
-	/*Suma 1 por la raiz del arbol y luego suma el sub-arbol izquierdo
-	 * y luego el sub-arbol derecho, eso de el tamañ */
+	/*Suma 1 por la raiz del arbol y luego suma el sub-arbol izquierdo */
+	/*y luego el sub-arbol derecho, eso de el size*/
 	return (1 + binary_tree_size(tree->left) + binary_tree_size(tree->right));
 }
